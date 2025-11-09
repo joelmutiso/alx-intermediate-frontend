@@ -1,0 +1,41 @@
+# Installing SASS on Windows
+
+Here are the steps I took to get SASS up and running on my Windows machine using `npm` (Node Package Manager).
+
+### Step 1: Install Node.js (Prerequisite)
+
+First, I needed to install Node.js, since SASS is distributed as an `npm` package and `npm` comes bundled with Node.js.
+
+1.  **Download:** I went to the official Node.js website at `https.nodejs.org/`.
+2.  **Select Installer:** I downloaded the Windows Installer (`.msi`) for the **LTS (Long Term Support)** version, as it's the most stable.
+3.  **Install:** I ran the installer and just followed the setup wizard, leaving all the default options selected.
+4.  **Verify:** After installation, I opened a new terminal in VS Code to make sure everything was working. I ran:
+
+    ```bash
+    node -v
+    npm -v
+    ```
+
+    This showed me the version numbers for both, so I knew I was ready for the next step.
+
+### Step 2: Install SASS
+
+With `npm` ready, I installed SASS globally on my system. Using the `-g` flag makes the `sass` command available from any directory in my terminal.
+
+1.  **Run Install Command:** In the same terminal, I ran the following command:
+
+    ```bash
+    npm install -g sass
+    ```
+
+### Step 3: Verify SASS Installation
+
+Finally, I did one last check to make sure SASS was installed correctly and accessible.
+
+1.  **Run Version Command:** I ran the `sass --version` command:
+
+    ```bash
+    sass --version
+    ```
+
+    This printed the installed SASS version (e.g., `1.77.8 compiled with dart2js 3.5.4`), confirming the installation was complete and I was ready to start coding!
